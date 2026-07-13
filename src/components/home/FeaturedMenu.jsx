@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { FaStar, FaHeart, FaShoppingCart } from "react-icons/fa";
 
-import chicken from "../../assets/chicken.png";
-import special from "../../assets/special.png";
-import roll from "../../assets/roll.png";
+import gallery1 from "../../assets/gallery/gallery1.jfif";
+import gallery2 from "../../assets/gallery/gallery2.jfif";
+import gallery3 from "../../assets/gallery/gallery3.jfif";
 
 const menuItems = [
   {
     id: 1,
-    image: chicken,
+    image: gallery1,
     name: "Chicken Shawarma",
     price: "₹149",
     rating: "4.9",
@@ -16,9 +16,10 @@ const menuItems = [
     desc: "Loaded with juicy grilled chicken and garlic sauce.",
     badge: "Best Seller",
   },
+
   {
     id: 2,
-    image: special,
+    image: gallery2,
     name: "Special Shawarma",
     price: "₹199",
     rating: "4.8",
@@ -26,9 +27,10 @@ const menuItems = [
     desc: "Double chicken, extra cheese and premium sauces.",
     badge: "Chef's Choice",
   },
+
   {
     id: 3,
-    image: roll,
+    image: gallery3,
     name: "Shawarma Roll",
     price: "₹129",
     rating: "4.7",

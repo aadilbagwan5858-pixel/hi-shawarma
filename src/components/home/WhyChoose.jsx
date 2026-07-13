@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { FaLeaf, FaShippingFast, FaStar, FaUtensils } from "react-icons/fa";
+import {
+  FaLeaf,
+  FaShippingFast,
+  FaStar,
+  FaUtensils,
+} from "react-icons/fa";
 
 const features = [
   {
@@ -30,7 +35,7 @@ const features = [
 
 function WhyChoose() {
   return (
-    <section className="bg-slate-950 py-24 text-white">
+    <section className="bg-white py-24 text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-white">
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Heading */}
@@ -49,7 +54,7 @@ function WhyChoose() {
             Why Hi Shawarma?
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-slate-400">
+          <p className="mx-auto mt-5 max-w-2xl text-slate-600 transition-colors duration-500 dark:text-slate-400">
             Every shawarma is prepared with fresh ingredients,
             authentic flavours and lots of passion.
           </p>
@@ -71,17 +76,17 @@ function WhyChoose() {
               viewport={{ once: true }}
             >
 
-              <div className="group rounded-3xl border border-slate-800 bg-slate-900 p-8 text-center transition-all duration-300 hover:-translate-y-3 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.25)]">
+              <div className="group rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.25)] dark:border-slate-800 dark:bg-slate-900">
 
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-white transition duration-300 group-hover:scale-110 group-hover:rotate-12">
                   {feature.icon}
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold">
+                <h3 className="mt-6 text-2xl font-bold text-slate-900 transition-colors duration-500 dark:text-white">
                   {feature.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-slate-400">
+                <p className="mt-4 leading-7 text-slate-600 transition-colors duration-500 dark:text-slate-400">
                   {feature.desc}
                 </p>
 

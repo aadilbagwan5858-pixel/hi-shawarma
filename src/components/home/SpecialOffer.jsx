@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function SpecialOffer() {
   return (
-    <section className="bg-slate-950 py-24">
+    <section className="bg-white py-24 transition-colors duration-500 dark:bg-slate-950">
       <div className="mx-auto max-w-7xl px-6">
 
         <motion.div
@@ -21,16 +21,16 @@ function SpecialOffer() {
               </p>
 
               <h2 className="mt-4 text-4xl font-extrabold md:text-6xl">
-                Get 50% OFF
+                Get 10% OFF
               </h2>
 
               <p className="mt-5 max-w-xl text-lg text-orange-100">
                 Every Friday enjoy delicious Chicken Shawarma with an
-                exclusive 50% discount. Freshly prepared and served hot.
+                exclusive 10% discount. Freshly prepared and served hot.
               </p>
             </div>
 
-            <button className="rounded-full bg-white px-8 py-4 text-lg font-bold text-orange-600 transition duration-300 hover:scale-105">
+            <button className="rounded-full bg-white px-8 py-4 text-lg font-bold text-orange-600 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-orange-50">
               Order Now 🌯
             </button>
 
