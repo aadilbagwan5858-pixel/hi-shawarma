@@ -4,7 +4,6 @@ import Hero from "../components/home/Hero";
 import BestSellers from "../components/home/BestSellers";
 import MenuSection from "../components/menu/MenuSection";
 import WhyChoose from "../components/home/WhyChoose";
-import SpecialOffer from "../components/home/SpecialOffer";
 import About from "../components/home/About";
 import Gallery from "../components/home/Gallery";
 import Testimonials from "../components/home/Testimonials";
@@ -37,8 +36,6 @@ export default function Home() {
       <MenuSection />
 
       <WhyChoose />
-
-      <SpecialOffer />
 
       <About />
 
