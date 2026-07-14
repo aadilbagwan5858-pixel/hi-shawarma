@@ -65,7 +65,7 @@ function MenuCard({ item }) {
           </button>
 
           <a
-            href="https://www.swiggy.com/menu/1320093?source=sharing"
+            href="https://zomato.onelink.me/xqzv/goipjfk3"
             target="_blank"
             rel="noreferrer"
             className="flex-1 rounded-full bg-orange-500 py-3 text-center text-sm sm:text-base font-semibold text-white transition hover:bg-orange-600"

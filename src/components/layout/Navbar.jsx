@@ -43,17 +43,17 @@ export default function Navbar() {
            : "bg-transparent" 
         }`}
       >
-        <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+        <nav className="mx-auto flex h-16 sm:h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3">
             <img
               src={logo}
               alt="Hi Shawarma Logo"
-              className="h-20 w-20 rounded-full border-2 border-orange-500 object-cover"
+              className="h-12 w-12 sm:h-16 sm:w-16 rounded-full border-2 border-orange-500 object-cover"
             />
 
-            <h1 className="text-2xl font-extrabold text-orange-500">
+            <h1 className="text-lg sm:text-2xl font-extrabold text-orange-500">
               Hi Shawarma
             </h1>
           </NavLink>
@@ -124,10 +124,35 @@ export default function Navbar() {
 
           </div>
 
+          <div className="flex items-center gap-3 md:hidden">
+
+  <div
+    onClick={() => setCartOpen(true)}
+    className="relative cursor-pointer"
+  >
+    <FaShoppingCart className="text-xl text-slate-800 dark:text-white" />
+
+    {totalItems > 0 && (
+      <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-xs font-bold text-white">
+        {totalItems}
+      </span>
+    )}
+
+  </div>
+
+  <button
+    onClick={toggleTheme}
+    className="text-xl text-orange-500"
+  >
+    {theme === "dark" ? <FaSun /> : <FaMoon />}
+  </button>
+
+</div>
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-2xl text-slate-800 dark:text-white md:hidden"
+            className="ml-3 text-2xl text-slate-800 dark:text-white md:hidden"
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
